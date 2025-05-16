@@ -1,16 +1,28 @@
-let countEl = document.getElementById("count-el");
-let count = 0;
+let homeScore = 0;
+let guestScore = 0;
+let homeEl = document.getElementById("home-el");
+let guestEl = document.getElementById("guest-el");
+let timer = document.getElementById("g");
+let homeOne = document.getElementById("home-one");
 
-function increment() {
-    count++;
-    countEl.innerText = count;
+function addScore(team, points) {
+    if(team === "home") {
+        homeScore += points;
+        homeEl.innerText = homeScore;
+    } else {
+        guestScore += points;
+        guestEl.innerText = guestScore;
+    }
 }
 
-let saveEl = document.getElementById("save-el");
+// if(homeScore > guestScore) {
 
-function save() {
-    let countStr = count + " - ";
-    saveEl.textContent += countStr;
-    count = 0;
-    countEl.innerText = count;
-}
+// }
+
+
+let reset = document.getElementById("resetGame").addEventListener("click", () => {
+    homeScore = 0;
+    guestScore = 0;
+    homeEl.innerText = 0;
+    guestEl.innerText = 0;
+});

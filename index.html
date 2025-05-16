@@ -1,17 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Station People Count</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <title>Basketball Scoreboard</title>
   </head>
   <body>
-    <div class="container">
-      <h1>People entered:</h1>
-      <h2 id="count-el">0</h2>
-      <button id="increment-btn" onclick="increment()">INCREMENT</button>
-      <br />
-      <button id="save-btn" onclick="save()">SAVE</button>
+    <div class="game">
+      <h4>Welcome to Likhon's Basketball!</h4>
+      <div class="countdown">
+        <h1 id="timer">01:00</h1>
+      </div>
 
-      <p id="save-el">Previous entries: </p>
+      <div class="container">
+        <div class="scoreBoard">
+          <h3>HOME</h3>
+          <div class="scores">
+            <h1 id="home-el">0</h1>
+          </div>
+          <div class="scoreBtns">
+            <button class="btn" onclick="addScore('home', 1)">+1</button>
+            <button class="btn" onclick="addScore('home', 2)">+2</button>
+            <button class="btn" onclick="addScore('home', 3)">+3</button>
+          </div>
+        </div>
+
+        <div class="scoreBoard">
+          <h3>GUEST</h3>
+          <div class="scores">
+            <h1 id="guest-el">0</h1>
+          </div>
+          <div class="scoreBtns">
+            <button class="btn" onclick="addScore('guest', 1)">+1</button>
+            <button class="btn" onclick="addScore('guest', 2)">+2</button>
+            <button class="btn" onclick="addScore('guest', 3)">+3</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn" id="resetGame">NEW GAME</button>
     </div>
 
     <script type="text/javascript" src="./index.js"></script>

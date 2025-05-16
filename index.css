@@ -1,55 +1,126 @@
 body {
-  background-image: url("station.jpg");
-  background-size: cover;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  margin-right: 30%;
-  margin-left: 30%;
-  /*   height: 100vh; */
+  background: #1B244A;
+  margin: 0;
+  /*   background-image: url("station.jpg"); */
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 100%;
 }
 
 .container {
-  background: gray;
-  max-width: 50%;
-  margin: auto;
-  border: 3px solid black;
-  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.scoreBoard {
+  color: #ffffff;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.scores {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  border-radius: 5px;
+  width: 155px;
+  height: 120px;
+  background: #080001;
+  text-align: center;
+}
+
+.countdown {
+  font-family: "Cursed Timer ULiL", sans-serif;
+  border: 4px dotted #bc8f8f;
+  border-radius: 5px;
+  width: 300px;
+  height: 125px;
+  background: #080001;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#timer {
+  font-size: 70px;
+  color: greenyellow;
 }
 
 h1 {
-  color: chocolate;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 90px;
+  font-weight: 400;
+  color: #F94F6D;
+  margin: 0;
+  line-height: 127px;
 }
 
 h2 {
-  color: purple;
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-button {
-  border: 1px solid black;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: white;
-  font-weight: bold;
-  width: 200px;
-  margin-bottom: 5px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 3px solid #9aabd8;
   border-radius: 5px;
+  width: 500px;
 }
 
-#increment-btn {
-  background: darkred;
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
-#save-btn {
-  background: darkgreen;
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Arial;
 }
 
-#save-el {
-  color: lime;
-  font-weight: bold;
+.scoreBtns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 155px;
+  height: 45px;
+  margin-top: 26px;
+}
+
+.btn {
+  width: 45px;
+  background: none;
+  color: #9AABD8;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Cursed Timer ULiL";
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid #9AABD8;
+}
+
+.btn:hover {
+  border: 3px solid #b9c9f5;
+}
+
+#resetGame {
+  width: 400px;
+  margin: 30px auto;
+  padding: 5px 10px;
+  height: 45px;
+  background: none;
+  border: 2px solid #9AABD8;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#resetGame:hover {
+  border: 3px solid #b9c9f5;
 }
