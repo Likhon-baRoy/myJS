@@ -37,10 +37,10 @@ body {
 
 .countdown {
   font-family: "Cursed Timer ULiL", sans-serif;
-  border: 4px dotted #bc8f8f;
+  border: 4px dotted #ffffff;
   border-radius: 5px;
-  width: 300px;
-  height: 125px;
+  width: auto;
+  height: auto;
   background: #080001;
   text-align: center;
   margin: 0 auto;
